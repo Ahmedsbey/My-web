@@ -4,8 +4,17 @@
         flex-wrap: wrap;
         margin: 20px 1px 20px 2px;
     }
-    .ctg-anim img{
-        height: 30%;
+    .ctg-heading {
+        top: 52px;
+    }
+    .ctg-anim .ctg-anim-contai :nth-child(1){
+        height: 59%;
+    }
+    .ctg-anim .ctg-anim-contai :nth-child(2){
+        height: 59%;
+    }
+    .ctg-anim .ctg-anim-contai :nth-child(3){
+        height: 59%;
     }
 }
 

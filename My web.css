@@ -7,7 +7,8 @@
 .navbar{
  background: rgba(18, 171, 231, 0);
  height: 81px;
- margin: 3px 0px 0px 0px;
+ margin: 1px 0px 0px 0px;
+ text-align: center;
 }
 label{
     font-size: 4em;
@@ -21,6 +22,19 @@ label{
     justify-content: center;
     align-items: center;
     overflow: hidden;
+    flex-direction: column;
+}
+.ctg-heading{
+    font-size: 30px;
+    position: relative;
+    top: 26px;
+}
+.ctg-anim-contai{
+    height: 90%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     opacity: 0;
     animation: opa 1s forwards;
 }
@@ -29,29 +43,32 @@ label{
     99%{opacity: 0;}
     100%{opacity: 1;}
 }
-.ctg-anim img{
-    height: 50%;
+.ctg-anim .ctg-anim-contai img{
     position: relative;
+    cursor: pointer;
 }
-.ctg-anim :nth-child(1){
+.ctg-anim .ctg-anim-contai :nth-child(1){
+    height: 80%;
     left: 176px;
     animation: image1 4s forwards;
     animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
 }
 @keyframes image1{
     0%{left: 176px;}
-    100%{left: -10px;}
+    100%{left: -5px;}
 }
-.ctg-anim :nth-child(2){
+.ctg-anim .ctg-anim-contai :nth-child(2){
+    height: 80%;
     left: 10px;
     animation: image2 4s forwards;
     animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
 }
 @keyframes image2{
     0%{left: 5px;}
-    100%{left: 0px;}
+    100%{left: 8px;}
 }
-.ctg-anim :nth-child(3){
+.ctg-anim .ctg-anim-contai :nth-child(3){
+    height: 80%;
     right: 176px;
     animation: image3 4s forwards;
     animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
@@ -91,4 +108,14 @@ label{
     align-items: center;
     display: flex;
     color: white;
+}
+footer{
+    background: black;
+    width: 100%;
+    height:80px;
+    color: rgb(235, 219, 191);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
 }
