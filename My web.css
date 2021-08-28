@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:wght@500&display=swap&effect=shadow-multiple|3d-float');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.navbar{
+ background: rgba(18, 171, 231, 0);
+ height: 81px;
+ margin: 3px 0px 0px 0px;
+}
+label{
+    font-size: 4em;
+    font-family: 'Poppins', sans-serif;
+    color: black;
+}
+.ctg-anim{
+    width: 100%;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    opacity: 0;
+    animation: opa 1s forwards;
+}
+@keyframes opa {
+    0%{opacity: 0;}
+    99%{opacity: 0;}
+    100%{opacity: 1;}
+}
+.ctg-anim img{
+    height: 50%;
+    position: relative;
+}
+.ctg-anim :nth-child(1){
+    left: 176px;
+    animation: image1 4s forwards;
+    animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+}
+@keyframes image1{
+    0%{left: 176px;}
+    100%{left: -10px;}
+}
+.ctg-anim :nth-child(2){
+    left: 10px;
+    animation: image2 4s forwards;
+    animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+}
+@keyframes image2{
+    0%{left: 5px;}
+    100%{left: 0px;}
+}
+.ctg-anim :nth-child(3){
+    right: 176px;
+    animation: image3 4s forwards;
+    animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+}
+@keyframes image3{
+    0%{right: 176px;}
+    100%{right:-10px;}
+}
+.container{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    justify-items: center;
+    margin-top: 20px;
+    grid-row-gap: 51px;
+    margin: 20px 0px 20px 0px;
+}
+.card{
+    width: 370px;
+    border: 3px solid;
+    height: 460px;
+}
+.img-box{
+    height:87%;
+}
+.card .img-box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.content{
+    height: 13%;
+    justify-content: space-around;
+    background: black;
+    align-items: center;
+    display: flex;
+    color: white;
+}
