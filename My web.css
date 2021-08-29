@@ -5,13 +5,13 @@
     box-sizing: border-box;
 }
 .navbar{
- background: rgba(18, 171, 231, 0);
+ background: rgb(4, 153, 253);
  height: 81px;
  margin: 1px 0px 0px 0px;
  text-align: center;
 }
 label{
-    font-size: 4em;
+    font-size: 53px;
     font-family: 'Poppins', sans-serif;
     color: black;
 }
@@ -27,7 +27,7 @@ label{
 .ctg-heading{
     font-size: 30px;
     position: relative;
-    top: 26px;
+    top: 20px;
 }
 .ctg-anim-contai{
     height: 90%;
@@ -43,40 +43,36 @@ label{
     99%{opacity: 0;}
     100%{opacity: 1;}
 }
-.ctg-anim .ctg-anim-contai img{
+.ctg-anim-contai a{
+    width: 16%;
     position: relative;
-    cursor: pointer;
 }
-.ctg-anim .ctg-anim-contai :nth-child(1){
-    height: 80%;
-    left: 176px;
-    animation: image1 4s forwards;
-    animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+.ctg-anim-contai a img{
+    width: 100%;
 }
-@keyframes image1{
-    0%{left: 176px;}
-    100%{left: -5px;}
+.ctg-anim-contai :nth-child(1){
+   animation: ctg1 3s forwards;
+   left: 233px;
 }
-.ctg-anim .ctg-anim-contai :nth-child(2){
-    height: 80%;
-    left: 10px;
-    animation: image2 4s forwards;
-    animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+.ctg-anim-contai :nth-child(2){
+    animation: ctg2 3s forwards;left: 10px;
+  
+ }
+ .ctg-anim-contai :nth-child(3){
+    animation: ctg3 3s forwards;  right: 236px;
+ }
+  @keyframes ctg1 {
+     0%{left: 233px;}
+     100%{left: 0px;}
+ }
+ @keyframes ctg2 {
+    0%{left: 10px;}
+    100%{left: 0px;}
 }
-@keyframes image2{
-    0%{left: 5px;}
-    100%{left: 8px;}
-}
-.ctg-anim .ctg-anim-contai :nth-child(3){
-    height: 80%;
-    right: 176px;
-    animation: image3 4s forwards;
-    animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
-}
-@keyframes image3{
-    0%{right: 176px;}
-    100%{right:-10px;}
-}
+@keyframes ctg3 {
+    0%{right: 236px;}
+    100%{right: 0px;}
+} 
 .container{
     width: 100%;
     height: 100%;
