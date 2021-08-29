@@ -127,6 +127,7 @@ label{
     justify-content: center;
     align-items: center;
     transition: 1s ease-in-out;
+    opacity: 0;
 }
 .uprbtn img{
     width: 77%;
