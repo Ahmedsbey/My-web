@@ -4,6 +4,16 @@
     padding: 0;
     box-sizing: border-box;
 }
+html{
+    scroll-behavior: smooth;
+}
+#scrollbar{
+    position: fixed;
+    top: 0px;
+    width: 0%;
+    height: 3px;
+    background: red;
+}
 .navbar{
  background: rgb(4, 153, 253);
  height: 81px;
@@ -104,6 +114,23 @@ label{
     align-items: center;
     display: flex;
     color: white;
+}
+.uprbtn{
+    border-radius: 50%;
+    background: rgba(14, 228, 163, 0.603);
+    position: fixed;
+    bottom: 10px;
+    right: 5px;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 1s ease-in-out;
+}
+.uprbtn img{
+    width: 77%;
+    height: 77%;
 }
 footer{
     background: black;
