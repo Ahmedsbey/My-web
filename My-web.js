@@ -19,3 +19,26 @@ if(unit <= 51.17876468274297){
     document.querySelector('.uprbtn').style.opacity = 0;
 }
 }
+
+// ajax
+function loadwatch(){
+    var xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function(){
+        if(this.readyState == 4 && this.status == 200){
+            document.querySelector('.container').innerHTML=this.responseText;
+        }
+    }
+    xhttp.open('GET',"watch.html",true);
+    xhttp.send();
+}
+
+function loadshoe(){
+    var xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function(){
+        if(this.readyState == 4 && this.status == 200){
+            document.querySelector('.container').innerHTML=this.responseText;
+        }
+    }
+    xhttp.open('GET',"shoe.html",true);
+    xhttp.send();
+}
