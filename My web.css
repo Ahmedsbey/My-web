@@ -53,11 +53,11 @@ label{
     99%{opacity: 0;}
     100%{opacity: 1;}
 }
-.ctg-anim-contai a{
+.ctg-anim-contai .aimg{
     width: 16%;
     position: relative;
 }
-.ctg-anim-contai a img{
+.ctg-anim-contai .aimg img{
     width: 100%;
 }
 .ctg-anim-contai :nth-child(1){
