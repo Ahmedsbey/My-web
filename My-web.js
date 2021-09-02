@@ -42,3 +42,8 @@ function loadshoe(){
     xhttp.open('GET',"shoe.html",true);
     xhttp.send();
 }
+
+document.querySelector(".Hamburger").addEventListener('click',()=>{
+    document.querySelector('.menu').classList.toggle('menuresp');
+    document.querySelector('.Hamburger').classList.toggle('closebtn');
+})
