@@ -13,20 +13,50 @@ html{
     width: 0%;
     height: 3px;
     background: red;
+    z-index: 50;
 }
 .navbar{
  background: rgb(4, 153, 253);
  height: 81px;
  margin: 1px 0px 0px 0px;
- text-align: center;
+ display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 label{
     font-size: 53px;
     font-family: 'Poppins', sans-serif;
     color: black;
+    margin: 0px 0px 0px 34px;
 }
+.Hamburger{
+    display: none;
+}
+.menu{
+display: flex;
+justify-content: center;
+align-items: center;
+position: absolute;
+    right: 58px;
+}
+.menu ul{
+list-style-type: none;
+display: flex;
+}
+.menu ul li{
+    padding: 0px 82px 0px 0px;
+}
+.menu ul li a{
+text-decoration: none;
+text-transform: uppercase;
+font-size: 20px;
+color: black;
+}
+.menu ul li a:hover{
+    color: rgb(255, 255, 255);
+    }
 .ctg-anim{
-    width: 100%;
+    width: rgb(255, 255, 255);
     height: 350px;
     display: flex;
     justify-content: center;
@@ -54,7 +84,7 @@ label{
     100%{opacity: 1;}
 }
 .ctg-anim-contai .aimg{
-    width: 16%;
+    width: 17%;
     position: relative;
 }
 .ctg-anim-contai .aimg img{
