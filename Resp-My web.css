@@ -61,12 +61,15 @@
         bottom: 56px;
         align-items: center;
     }
-    
     .menu ul li {
         padding: 91px 0px 0px 0px;
     }
     .menu ul li a{
         font-size: 30px;
+    }
+    .menu ul .Category{
+        position: relative;
+        top:0px;
     }
     .container{
         display:flex;

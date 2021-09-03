@@ -47,3 +47,7 @@ document.querySelector(".Hamburger").addEventListener('click',()=>{
     document.querySelector('.menu').classList.toggle('menuresp');
     document.querySelector('.Hamburger').classList.toggle('closebtn');
 })
+
+function categ(){
+    document.querySelector('.Category').classList.toggle('Categ');
+}
