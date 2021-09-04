@@ -45,7 +45,7 @@
     .menu{
         position: fixed;
         right: 0px;
-        background: rgb(38 37 37 / 99%);
+        background-image: linear-gradient(to right top, #00bfff, #36c3f9, #51c8f3, #67cbee, #7acfe9, #79cee9, #78ceea, #77cdea, #62c8ef, #4bc2f4, #30bcfa, #00b6ff);
         height:80%;
         width: 100%;
         z-index: 49;
@@ -54,6 +54,7 @@
         }
         .menuresp{
             transform: translateY(41%); 
+            box-shadow: 0px 1px 10px 0px;
         }
     .menu ul {
         flex-direction: column;

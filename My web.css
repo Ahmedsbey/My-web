@@ -11,23 +11,23 @@ html{
     scroll-behavior: smooth;
 }
 #scrollbar{
-    position: fixed;
+    position: sticky;
     top: 0px;
     width: 0%;
-    height: 3px;
+    height: 2px;
     background: red;
     z-index: 50;
 }
 .navbar{
- background: rgb(4, 153, 253);
- height: 81px;
- margin: 1px 0px 0px 0px;
+    background-image: linear-gradient(to right top, #60c9ec, #6cceee, #78d4ef, #83d9f1, #8edef3, #89ddf4, #83dbf6, #7edaf7, #67d2f9, #4ec9fb, #31c0fd, #00b6ff);
+    height: 81px;
  display: flex;
     align-items: center;
     justify-content: space-between;
     position: sticky;
     top: 0px;
     z-index: 49;
+    box-shadow: 0px 1px 5px 0px;
 }
 label{
     font-size: 53px;
@@ -153,8 +153,9 @@ color: black;
 }
 .card{
     width: 370px;
-    border: 3px solid;
+    border: 2px solid #054357;
     height: 460px;
+    box-shadow: 0px 2px 6px 0px;
 }
 .img-box{
     height:87%;
@@ -167,14 +168,14 @@ color: black;
 .content{
     height: 13%;
     justify-content: space-around;
-    background: black;
+    background: #1baedd;
     align-items: center;
     display: flex;
     color: white;
 }
 .uprbtn{
     border-radius: 50%;
-    background: rgba(14, 228, 163, 0.603);
+    background: rgb(127 216 241 / 68%);
     position: fixed;
     bottom: 10px;
     right: 5px;
