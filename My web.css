@@ -155,7 +155,7 @@ color: black;
     width: 370px;
     border: 2px solid #054357;
     height: 460px;
-    box-shadow: 0px 2px 6px 0px;
+    box-shadow: 0px 2px 9px 0px rgba(0, 0, 0, 0.404);
 }
 .img-box{
     height:87%;

@@ -51,3 +51,7 @@ document.querySelector(".Hamburger").addEventListener('click',()=>{
 function categ(){
     document.querySelector('.Category').classList.toggle('Categ');
 }
+
+var alertMsg = "You want buy any product plz contact us"
+var conf = window.onload = setTimeout(()=>{confirm(alertMsg); },8000)
+;
