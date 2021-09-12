@@ -55,6 +55,6 @@ function categ(){
 var alertMsg = "You want buy any product plz contact us"
 window.onload = conf()
 
-function conf(){
- setTimeout(()=>{confirm(alertMsg); },8000);
-}
+// function conf(){
+//  setTimeout(()=>{confirm(alertMsg); },8000);
+// }

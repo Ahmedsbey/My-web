@@ -68,15 +68,18 @@
     .menu ul li a{
         font-size: 30px;
     }
-    .menu ul .Category{
+    .menu ul li .Category{
         position: relative;
         top:0px;
+        background: #00000000;
+    width: auto;
+    box-shadow: none;
     }
     .container{
         margin: 20px 1px 20px 2px;
         grid-template-columns: 1fr 1fr;
         grid-column-gap: 2px;
-        grid-row-gap: 10px;
+        grid-row-gap: 0px;
     }
      .ctg-heading {
         top: 52px;
