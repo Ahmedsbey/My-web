@@ -8,6 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="My web.css">
     <link rel="stylesheet" href="Resp-My web.css">
+    <link rel="stylesheet" href="Image-slider.css">
     <title>SELKFZ</title>
 </head>
 
@@ -34,14 +35,39 @@
             </ul>
         </div>
     </div>
-    <div class="ctg-anim">
+    <div class="slideshow-container">
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 3</div>
+          <img src="Photos/Product-img/T-shirt/Product1.jpg" style="width:100%">
+          <div class="text">Men's Wear</div>
+        </div>
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 3</div>
+          <img src="Photos/Product-img/Shoe/Product1.jpg" style="width:100%">
+          <div class="text">Shoe's</div>
+        </div>
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 3</div>
+          <img src="Photos/Product-img/Watch/Product3.jpg" style="width:100%">
+          <div class="text">Watches</div>
+        </div>
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+      <br>
+      <div style="text-align:center;margin-top: -6px;">
+        <span class="dot" onclick="currentSlides(1)"></span>
+        <span class="dot" onclick="currentSlides(2)"></span>
+        <span class="dot" onclick="currentSlides(3)"></span>
+      </div>
+    <!-- <div class="ctg-anim">
         <h2 class="ctg-heading">Category</h2>
         <div class="ctg-anim-contai">
             <a class="aimg" href="index.html"><img src="Photos/t-shirt.png"></a>
             <div class="aimg" onclick="loadwatch()"><img src="Photos/watch.png"></div>
             <div class="aimg" onclick="loadshoe()"><img src="Photos/shoe.png"></div>
         </div>
-    </div>
+    </div> -->
     <div class="container">
         <a class="card" href="#">
             <div class="img-box">

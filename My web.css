@@ -20,7 +20,7 @@ html{
 }
 .navbar{
     background-image: linear-gradient(to right top, #60c9ec, #6cceee, #78d4ef, #83d9f1, #8edef3, #89ddf4, #83dbf6, #7edaf7, #67d2f9, #4ec9fb, #31c0fd, #00b6ff);
-    height: 81px;
+    height: 75px;
  display: flex;
     align-items: center;
     justify-content: space-between;
